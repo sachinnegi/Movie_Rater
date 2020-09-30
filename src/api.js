@@ -1,0 +1,1 @@
+"img_base_url": "http://image.tmdb.org/t/p/w500"
