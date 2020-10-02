@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {img_base_url} from '../../api';
 import axios from 'axios';
 
-function Card({url}) {
-    console.log(url)
+function Card({title,url}) {
+    // console.log(url)
     const [movies, setMovies] = useState([]);
 
     
@@ -11,17 +11,23 @@ function Card({url}) {
         const getData = async(url) =>{
             try{
                 const response  = await axios.get(url);
-                console.table(response.data.results);
+                setMovies(response.data.results)
+                return response;
             } catch(error) {
                 console.log(error, "somethings not right");
             }
         }
         getData(url);
     },[url])
-
+    
     return (
-        <div>
-
+        <div className = "Card_container">
+            <div className="title">
+                <h1>{title}</h1>
+            </div>
+            {movies.map( (movie,idx)=>(
+                <h3 key={idx}>{movie.title}</h3>
+            ))} 
         </div>
        
     )
