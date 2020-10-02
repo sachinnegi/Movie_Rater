@@ -1,7 +1,13 @@
 .nav-bar{
-    background: rgb(243, 153, 153);
+    background: rgb(243, 153, 153) ;
     display: flex;
     padding: 5px 10px 0 10px;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+
 }
 .right-items{
     display:flex;

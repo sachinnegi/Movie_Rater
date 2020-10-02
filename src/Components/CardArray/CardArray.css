@@ -1,0 +1,16 @@
+.cards-container{
+    display:flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 15px 0;
+    
+}
+.row{
+    margin-top:50px;
+}
+.heading{
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+    color: white;
+}

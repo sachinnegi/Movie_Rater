@@ -1,0 +1,25 @@
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 10px;
+    /* background-color: aqua; */
+    height: 390px;
+    
+
+}
+.poster{
+    object-fit: contain;
+    width: 200px;
+    height: 300px;
+    border-radius:5px;
+    transition: all 0.5s;
+}
+.poster-title{
+    margin-top: 10px;
+    font-family: 'Bungee Inline', cursive;
+    color: wheat;
+}
+.poster:hover{
+    transform : scale(1.08);
+}

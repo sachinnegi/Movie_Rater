@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../Card/Card';
+import './CardArray.css'
 import axios from 'axios';
 
 function CardArray({heading,url}) {
@@ -8,6 +9,7 @@ function CardArray({heading,url}) {
 
     
     useEffect(() => {
+        window.scrollTo(0,0);
         const getData = async(url) =>{
             try{
                 const response  = await axios.get(url);
@@ -24,7 +26,7 @@ function CardArray({heading,url}) {
     return (
         <div className = "row">
 
-            <h1>heading</h1>
+            <h1 className='heading'>{heading}</h1>
             <div className = "cards-container">
                 {movies.map( (movie,idx)=>(
                     <Card
