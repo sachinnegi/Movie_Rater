@@ -6,7 +6,15 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Community from './Components/Community/Community';
 
-
+/* 
+  header
+  card
+  cardDetail
+  Community
+  About
+  Movies/Homepage
+  Tvshows
+*/
 
 function App() {
   return (
