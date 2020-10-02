@@ -16,7 +16,7 @@ const tvShowURL = {
     "topRated": `https://api.themoviedb.org/3/tv/popular?api_key=${key}&language=en-US&page=1`,
 }
 
-const img_base_url = "http://image.tmdb.org/t/p/w500"
+const img_base_url = "http://image.tmdb.org/t/p/w342"
 export {movieURL, tvShowURL,img_base_url}
 
 const url  = movieURL.latest;

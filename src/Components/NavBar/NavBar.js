@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import './NavBar.css'
-import Card from '../Card/Card'
+import Card from '../CardArray/CardArray'
 
 
 import { Button } from 'antd';

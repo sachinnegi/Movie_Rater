@@ -1,14 +1,14 @@
 import React from 'react'
 import {movieURL} from '../../api';
-import Card from '../Card/Card';
+import CardArray from '../CardArray/CardArray';
 
 function Home() {
     return (
         <div className="homepage">
-            <Card title = {"Popular Movies"} url={movieURL.popular} />
-            <Card title = {"Top Rated Movies"} url={movieURL.topRated} />
-            <Card title = {"Now Playing"} url={movieURL.now_playing} />
-            <Card title = {"Upcoming Movies"} url={movieURL.upcoming} />
+            <CardArray heading = {"Popular Movies"} url={movieURL.popular} />
+            <CardArray heading = {"Top Rated Movies"} url={movieURL.topRated} />
+            <CardArray heading = {"Now Playing"} url={movieURL.now_playing} />
+            <CardArray heading = {"Upcoming Movies"} url={movieURL.upcoming} />
             
         </div>
     )
