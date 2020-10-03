@@ -1,11 +1,10 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-
+/* 
 .App{
-    background-color: #100E17;
     padding-top: 100px;
-}
+} */
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
