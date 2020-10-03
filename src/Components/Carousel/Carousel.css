@@ -1,24 +1,20 @@
-/* .car{
-    padding: auto auto;
-    background: red;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-} */
-/* h3{
-    background: red;
-} */
+.car{
+    padding-right: 20px; 
+} 
+
 .indiv{
+    
     height: 80vh;
-    /* background: #364d79;
-    background: url("http://image.tmdb.org/t/p/w342/riYInlsq2kf1AWoGm80JQW5dLKp.jpg") center center no-repeat;
-    background-size: cover; */
+    /* background: #364d79; */
+    /* background: url("http://image.tmdb.org/t/p/w342/riYInlsq2kf1AWoGm80JQW5dLKp.jpg") center center no-repeat; */
+    /* background-size: cover; */ 
 }
 .image{
     object-fit: contain;
-    height:500px;
+    /* height:500px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    width: 400px;
 }
