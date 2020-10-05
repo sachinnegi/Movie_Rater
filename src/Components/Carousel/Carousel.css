@@ -1,20 +1,24 @@
 .car{
-    padding-right: 20px; 
+    padding-top: 5px;
+    background-color:black;
+    margin-right: 20px;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; 
 } 
 
 .indiv{
-    
     height: 80vh;
-    /* background: #364d79; */
-    /* background: url("http://image.tmdb.org/t/p/w342/riYInlsq2kf1AWoGm80JQW5dLKp.jpg") center center no-repeat; */
-    /* background-size: cover; */ 
 }
 .image{
     object-fit: contain;
-    /* height:500px; */
+    border-radius: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    width: 400px;
+    width: 410px;
 }

@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import { Carousel } from 'antd';
 import './Carousel.css';
-import {movieURL,img_base_url} from '../../api';
+import {key,img_base_url} from '../../api';
 import axios from 'axios';
 
-const url = movieURL.upcoming
+const url = `https://api.themoviedb.org/3/trending/movie/week?api_key=${key}`;
 var poster1,poster2,poster3, poster4;
 function CarouselAnimation() {
    
@@ -17,6 +17,7 @@ function CarouselAnimation() {
             try{
                 const response  = await axios.get(url);
                 setMovies(response.data.results)
+                console.log(movies)
                 return response;
             } catch(error) {
                 console.log(error, "somethings not right");
