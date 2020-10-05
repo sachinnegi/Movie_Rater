@@ -4,17 +4,15 @@ import './CardArray.css'
 import axios from 'axios';
 
 function CardArray({heading,url}) {
-    // console.log(url)
     const [movies, setMovies] = useState([]);
 
-    
     useEffect(() => {
         window.scrollTo(0,0);
         const getData = async(url) =>{
             try{
                 const response  = await axios.get(url);
                 setMovies(response.data.results)
-                console.log(response.data.results)
+                // console.log(response.data.results)
                 return response;
             } catch(error) {
                 console.log(error, "somethings not right");
@@ -31,7 +29,7 @@ function CardArray({heading,url}) {
                 {movies.map( (movie,idx)=>(
                     <Card
                         key = {movie.id}
-                        title = {movie.title}
+                        title = {movie.title || movie.name}
                         id = {movie.id}
                         poster_path = {movie.poster_path}
                     />

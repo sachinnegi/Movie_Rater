@@ -7,7 +7,6 @@ function Card({title, id, poster_path}) {
         <div className='card'>
             <img className = "poster" alt={title} src={`${img_base_url}${poster_path}`}/>
             <h2 className="poster-title">{title}</h2>
-            
         </div>
     )
 }

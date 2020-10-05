@@ -1,10 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import './NavBar.css'
-import Card from '../CardArray/CardArray'
-
-
-import { Button } from 'antd';
 
 function NavBar() {
     return (
@@ -14,8 +10,9 @@ function NavBar() {
             </div>
             <ul className='right-items'>
                 <li><Link to="/" className = 'text-link'> Home </Link></li>
-                <li><Link to="/about"className = 'text-link'> About </Link></li>
+                <li><Link to="/tvshows" className = 'text-link'> TV Shows </Link></li>
                 <li><Link to="/community"className = 'text-link'> Community </Link></li>
+                <li><Link to="/about"className = 'text-link'> About </Link></li>
             </ul>
         </nav>
         

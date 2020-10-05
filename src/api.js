@@ -11,9 +11,11 @@ const movieURL = {
 }
 
 const tvShowURL = {
-    "latest": `https://api.themoviedb.org/3/tv/latest?api_key=${key}&language=en-US`,
+    "latest": `https://api.themoviedb.org/3/tv/airing_today?api_key=${key}&language=en-US&page=1`,
     "popular": `https://api.themoviedb.org/3/tv/popular?api_key=${key}&language=en-US&page=1`,
-    "topRated": `https://api.themoviedb.org/3/tv/popular?api_key=${key}&language=en-US&page=1`,
+    "topRated": `https://api.themoviedb.org/3/tv/top_rated?api_key=${key}&language=en-US&page=1`,
+    "trending": `https://api.themoviedb.org/3/trending/tv/week?api_key=${key}`,
+
 }
 
 const img_base_url = "http://image.tmdb.org/t/p/w342"

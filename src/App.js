@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Community from './Components/Community/Community';
+import Tvshows from './Components/TvShow/TvShow';
 
 /* 
   header
@@ -25,6 +26,9 @@ function App() {
         <Switch>
           <Route exact path='/'>
             <Home/>
+          </Route>
+          <Route exact path='/tvshows'>
+            <Tvshows/>
           </Route>
           <Route exact path='/community'> 
             <Community/>

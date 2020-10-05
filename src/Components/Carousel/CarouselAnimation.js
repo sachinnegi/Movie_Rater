@@ -17,7 +17,6 @@ function CarouselAnimation() {
             try{
                 const response  = await axios.get(url);
                 setMovies(response.data.results)
-                console.log(movies)
                 return response;
             } catch(error) {
                 console.log(error, "somethings not right");
@@ -39,16 +38,16 @@ function CarouselAnimation() {
             
             <Carousel pauseOnHover ={false} autoplay speed= {1000} autoplaySpeed = {2400} className= 'car'>
                 <div className = "indiv">
-                    <img className='image' src= {poster1}/>
+                    <img alt="poster" className='image' src= {poster1}/>
                 </div>
                 <div className = "indiv">
-                    <img className='image' src= {poster2}/>
+                    <img alt="poster" className='image' src= {poster2}/>
                 </div>
                 <div className = "indiv">
-                    <img className='image' src= {poster3}/>
+                    <img alt="poster" className='image' src= {poster3}/>
                 </div>
                 <div className = "indiv">
-                    <img className='image' src= {poster4}/>
+                    <img alt="poster" className='image' src= {poster4}/>
                 </div>
             </Carousel>
                
