@@ -5,6 +5,7 @@
 
 /* CUSTOM SCROLL BAR    */
 ::-webkit-scrollbar {
+    scroll-behavior: smooth;
     width: 10px;
     height: 8px;
 }
