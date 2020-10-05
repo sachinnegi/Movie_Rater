@@ -1,5 +1,5 @@
 .nav-bar{
-    background: rgb(243, 153, 153) ;
+    background:rgba(0,0,0,0.8) ;
     display: flex;
     padding: 5px 10px 0 10px;
     position: fixed;
@@ -18,7 +18,7 @@
     margin: 0 15px;
 }
 .text-link{
-    color: black;
+    color: white;
 }
 .logo{
     flex: 1;
