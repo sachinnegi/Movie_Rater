@@ -1,4 +1,4 @@
-.cards-container{
+.cards__container{
     display:flex;
     flex-flow: row nowrap;
     overflow-x: scroll;

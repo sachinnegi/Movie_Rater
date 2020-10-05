@@ -25,7 +25,7 @@ function CardArray({heading,url}) {
         <div className = "row">
 
             <h1 className='heading'>{heading}</h1>
-            <div className = "cards-container">
+            <div className = "cards__container">
                 {movies.map( (movie,idx)=>(
                     <Card
                         key = {movie.id}

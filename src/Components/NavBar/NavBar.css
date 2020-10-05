@@ -1,4 +1,4 @@
-.nav-bar{
+.nav__bar{
     background:rgba(0,0,0,0.8) ;
     display: flex;
     padding: 5px 10px 0 10px;
@@ -10,14 +10,14 @@
     opacity: 1;
 
 }
-.right-items{
+.right__items{
     display:flex;
 }    
-.right-items li{
+.right__items li{
     list-style: none;
     margin: 0 15px;
 }
-.text-link{
+.text__link{
     color: white;
 }
 .logo{
