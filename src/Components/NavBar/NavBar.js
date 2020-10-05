@@ -5,7 +5,7 @@ import './NavBar.css'
 function NavBar() {
     return (
         <nav className = 'nav__bar'>
-            <div className="logo">
+            <div style={{color:'white'}} className="logo">
                 LOGO MOVIE MAKER
             </div>
             <ul className='right__items'>
