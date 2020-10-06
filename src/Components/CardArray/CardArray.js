@@ -3,7 +3,7 @@ import Card from '../Card/Card';
 import './CardArray.css'
 import axios from 'axios';
 
-function CardArray({heading,url}) {
+function CardArray({heading,url,getMovie}) {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
@@ -32,6 +32,8 @@ function CardArray({heading,url}) {
                         title = {movie.title || movie.name}
                         id = {movie.id}
                         poster_path = {movie.poster_path}
+                        movieDetail =  {movie}
+                        getMovie = {getMovie}
                     />
                 ))} 
             </div>

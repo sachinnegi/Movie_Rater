@@ -3,14 +3,14 @@ import {tvShowURL} from '../../api';
 import CardArray from '../CardArray/CardArray';
 
 
-function TvShow() {
+function TvShow({getMovie}) {
     return (
         
         <div className="homepage">
-            <CardArray heading = {"Trending"} url={tvShowURL.trending} />
-            <CardArray heading = {"Latest"} url={tvShowURL.latest} />
-            <CardArray heading = {"Popular"} url={tvShowURL.popular} />
-            <CardArray heading = {"Top Rated"} url={tvShowURL.topRated} />         
+            <CardArray heading = {"Trending"} url={tvShowURL.trending} getMovie = {getMovie} />
+            <CardArray heading = {"Latest"} url={tvShowURL.latest} getMovie = {getMovie} />
+            <CardArray heading = {"Popular"} url={tvShowURL.popular} getMovie = {getMovie} />
+            <CardArray heading = {"Top Rated"} url={tvShowURL.topRated} getMovie = {getMovie} />         
         </div>    
     )
 }
