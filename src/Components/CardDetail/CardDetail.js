@@ -1,25 +1,49 @@
-import React from 'react'
-import { movieURL } from '../../api'
-import {img_base_url} from '../../api';
-import './CardDetail.css'
+import React, {useEffect} from 'react';
+import './CardDetail.css';
+
+
+const img_base_url = "http://image.tmdb.org/t/p/w342";
+const backdrop_base_url = "http://image.tmdb.org/t/p/w1920_and_h800_multi_faces";
 
 function CardDetail({movieDetail}) {
     console.log(movieDetail)
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
+
     if (movieDetail){
+        
+        const container_style = {
+            backgroundImage: `linear-gradient(to right, rgba(21.57%, 14.51%, 15.69%, 1.00) 150px, rgba(27.45%, 22.75%, 23.53%, 0.84) 100%), url("${backdrop_base_url + movieDetail.backdrop_path}")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            bakcgroundRepeat: 'no-repeat',    
+        }
+        
         return (
-            <div className = "CardDetail__container">
+            <div style = {container_style} className = "CardDetail__container">
                 <div className="CardDetail__image">
-                    
+                    <img alt="poster" className="cardDetail__image" src={`${img_base_url + movieDetail.poster_path}`} />
                 </div>
                 <div className="CardDetail__detail">
-                    <h1 className="CardDetail__title">{movieDetail.title || movieDetail.name}</h1>
+                    <header className="cardDetail__header">
+                        <h1 className="CardDetail__title">{movieDetail.title || movieDetail.name}</h1>
+                        <p className="date">{movieDetail.first_air_date || movieDetail.release_date}</p>
+                        <p className="popularity">Popularity {movieDetail.popularity}</p>
+                    </header>
+                    <section className="overview">
+                        <h2 className="overview__header">Overview</h2>
+                        <div>{movieDetail.overview}</div>
+                    </section>
+                    
                 </div>
             </div>
         )
     }
     else{
         return (
-            <h1></h1>
+            <h1>Loading...</h1>
         )
     }
 }

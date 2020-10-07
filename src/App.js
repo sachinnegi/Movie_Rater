@@ -7,6 +7,8 @@ import About from './Components/About/About';
 import Community from './Components/Community/Community';
 import Tvshows from './Components/TvShow/TvShow';
 import CardDetail from './Components/CardDetail/CardDetail';
+import { BackTop } from 'antd';
+import {VerticalAlignTopOutlined} from '@ant-design/icons';
 
 /* 
   header
@@ -24,9 +26,24 @@ function App() {
   const getMovie = (movieDetail)=>{
     setMovie(movieDetail);
   }  
-
+  const style = {
+    height: '40px',
+    width: '40px',
+    lineHeight: '40px',
+    borderRadius: '50%',
+    backgroundColor: '#6fb3b0',
+    color: '#fff',
+    textAlign: 'center',
+    fontSize: 20,
+  };
+  
   return (
     <div className="App">
+
+    <BackTop>
+      <div style={style}><VerticalAlignTopOutlined/></div>
+    </BackTop>
+     
       <Router>
         <NavBar/>
 

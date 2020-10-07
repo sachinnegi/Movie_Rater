@@ -1,0 +1,31 @@
+.cardDetail__image{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.CardDetail__detail{
+    margin-left: 0px;
+}
+.CardDetail__container{
+    background-attachment: fixed;
+    display: flex;
+    min-height:100vh ;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 60px;
+    /* padding-left:20px;  */
+    /* padding-right:20px;  */
+    align-items: center;
+    max-width: 100%;
+}
+.overview__header, .CardDetail__title, .date, .popularity, .overview{
+    color: white;
+}
+.CardDetail__title{
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+}
+.overview{
+    max-width: 400px;
+}
