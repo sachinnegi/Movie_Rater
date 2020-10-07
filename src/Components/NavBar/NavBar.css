@@ -20,6 +20,15 @@
 }
 .text__link{
     color: white;
+    transition: all 0.35s;
+    font-size: 16px;
+}
+.text__link:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 4px;
+    transform: scale(1.08);
+    display: inline-block;
 }
 .logo{
     flex: 1;
