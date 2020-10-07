@@ -33,8 +33,8 @@ function CardDetail({movieDetail}) {
                         <p className="popularity">Popularity {movieDetail.popularity}</p>
                     </header>
                     <section className="overview">
-                        <h2 className="overview__header">Overview</h2>
-                        <div>{movieDetail.overview}</div>
+                        <p className="overview__header">Overview</p>
+                        <div className="overview__detail">{movieDetail.overview}</div>
                     </section>
                     
                 </div>
