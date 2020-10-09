@@ -1,22 +1,24 @@
 .cardDetail__image{
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
     border-radius: 10px;
     object-fit: contain;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 .CardDetail__detail{
-    margin-left: 0px;
+    max-width: 750px;
+    margin-left: 20px;
 }
 .CardDetail__container{
     background-attachment: fixed;
     display: flex;
     min-height:100vh ;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     padding-top: 60px;
     align-items: center;
     max-width: 100%;
+    
 }
 .overview__header, .CardDetail__title, .date, .popularity, .overview{
     color: white;
@@ -26,16 +28,49 @@
     font-size: 45px;
     font-weight: 500;
 }
-.overview{
-    max-width: 700px;
-}
+
 .overview__detail{
     font-family: 'Contrail One', cursive;
     font-family: 'Courgette', cursive;
-    font-size: 22px;
+    font-size: 21px;
+    font-weight: 100;
 }
 .overview__header{
     font-family: 'Secular One', sans-serif;
     font-weight: 400;
     font-size: 35px;
+}
+
+@media screen and (max-width:793px){
+    .CardDetail__container{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .CardDetail__detail{
+        max-width: 400px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .overview__detail{
+        font-size: 19px;
+        text-align: justify;
+    }
+    .CardDetail__title{
+        font-size: 35px;
+    }
+    .overview__header{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:411px){
+    .CardDetail__detail{
+        max-width: 400px;
+        margin-right: 10px;
+        text-align: left;
+    }
+    .cardDetail__image{
+        height: 50%;
+        width: 50%;
+        /* object-fit: none; */
+    }
 }

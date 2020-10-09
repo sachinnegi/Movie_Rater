@@ -8,7 +8,7 @@
     height: 50px;
     width: 100%;
     z-index: 1000;
-    opacity: 1;
+    /* opacity: 1; */
 
 }
 .right__items{
@@ -20,16 +20,17 @@
 }
 .text__link{
     color: white;
-    transition: all 0.35s;
+    transition: all 0.2s ;
     font-size: 16px;
 }
 .text__link:hover{
     background-color: whitesmoke;
     color: black;
-    border-radius: 4px;
-    transform: scale(1.08);
+    border-radius: 3px;
+    transform: scale(1.05);
     display: inline-block;
 }
 .logo{
     flex: 1;
 }
+
