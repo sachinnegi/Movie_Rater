@@ -47,13 +47,13 @@
         align-items: center;
     }
     .CardDetail__detail{
+        margin-top: 20px;
         max-width: 400px;
         margin-right: 5px;
         text-align: center;
     }
     .overview__detail{
         font-size: 19px;
-        text-align: justify;
     }
     .CardDetail__title{
         font-size: 35px;
