@@ -45,13 +45,16 @@
     .CardDetail__container{
         flex-flow: column nowrap;
         align-items: center;
+        
     }
     .CardDetail__detail{
         margin-top: 20px;
         max-width: 400px;
         margin-right: 5px;
-        text-align: center;
+        text-align: left;
+        margin-left:60px;
     }
+    
     .overview__detail{
         font-size: 19px;
     }
@@ -62,10 +65,16 @@
         font-size: 30px;
     }
 }
+@media screen and (max-width:460px){
+    .CardDetail__detail{
+          margin-left: 40px;
+    }
+}
 @media screen and (max-width:411px){
     .CardDetail__detail{
         max-width: 400px;
         margin-right: 10px;
+        margin-left: 20px;
         text-align: left;
     }
     .cardDetail__image{
