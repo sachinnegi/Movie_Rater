@@ -3,7 +3,7 @@ import Card from '../Card/Card';
 import './CardArray.css'
 import axios from 'axios';
 
-function CardArray({heading,url,getMovie}) {
+function CardArray({reqbgImg,getUrl,heading,url,getMovie}) {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
@@ -12,6 +12,9 @@ function CardArray({heading,url,getMovie}) {
             try{
                 const response  = await axios.get(url);
                 setMovies(response.data.results)
+                if (reqbgImg){
+                    getUrl(response.data.results[0])
+                }
                 // console.log(response.data.results)
                 return response;
             } catch(error) {

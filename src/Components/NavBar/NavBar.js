@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <nav className = 'nav__bar'>
             <div style={{color:'white'}} className="logo">
-                LOGO MOVIE MAKER
+                MOVIE RATER
             </div>
             <ul className='right__items'>
                 <li><Link to="/" className = 'text__link'> Home </Link></li>

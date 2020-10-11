@@ -18,6 +18,8 @@ import {VerticalAlignTopOutlined} from '@ant-design/icons';
   About
   Movies/Homepage
   Tvshows
+  Search Feature
+  Register User
 */
 
 function App() {
