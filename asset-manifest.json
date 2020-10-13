@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f72f9d0.chunk.css",
-    "main.js": "/static/js/main.c3865829.chunk.js",
-    "main.js.map": "/static/js/main.c3865829.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.968809a1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.968809a1.js.map",
-    "static/css/2.220ccb42.chunk.css": "/static/css/2.220ccb42.chunk.css",
-    "static/js/2.01fb00b3.chunk.js": "/static/js/2.01fb00b3.chunk.js",
-    "static/js/2.01fb00b3.chunk.js.map": "/static/js/2.01fb00b3.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.bbcfc49cdb449b0cca74594531b0ef5d.js": "/precache-manifest.bbcfc49cdb449b0cca74594531b0ef5d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.220ccb42.chunk.css.map": "/static/css/2.220ccb42.chunk.css.map",
-    "static/css/main.8f72f9d0.chunk.css.map": "/static/css/main.8f72f9d0.chunk.css.map",
-    "static/js/2.01fb00b3.chunk.js.LICENSE.txt": "/static/js/2.01fb00b3.chunk.js.LICENSE.txt"
+    "main.css": "/movierater/static/css/main.8f72f9d0.chunk.css",
+    "main.js": "/movierater/static/js/main.ef5a9b40.chunk.js",
+    "main.js.map": "/movierater/static/js/main.ef5a9b40.chunk.js.map",
+    "runtime-main.js": "/movierater/static/js/runtime-main.b03a0cf4.js",
+    "runtime-main.js.map": "/movierater/static/js/runtime-main.b03a0cf4.js.map",
+    "static/css/2.220ccb42.chunk.css": "/movierater/static/css/2.220ccb42.chunk.css",
+    "static/js/2.01fb00b3.chunk.js": "/movierater/static/js/2.01fb00b3.chunk.js",
+    "static/js/2.01fb00b3.chunk.js.map": "/movierater/static/js/2.01fb00b3.chunk.js.map",
+    "index.html": "/movierater/index.html",
+    "precache-manifest.3474a9bf5eae3d7c5399cd7c97c1d784.js": "/movierater/precache-manifest.3474a9bf5eae3d7c5399cd7c97c1d784.js",
+    "service-worker.js": "/movierater/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/movierater/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.8f72f9d0.chunk.css.map": "/movierater/static/css/main.8f72f9d0.chunk.css.map",
+    "static/js/2.01fb00b3.chunk.js.LICENSE.txt": "/movierater/static/js/2.01fb00b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.968809a1.js",
+    "static/js/runtime-main.b03a0cf4.js",
     "static/css/2.220ccb42.chunk.css",
     "static/js/2.01fb00b3.chunk.js",
     "static/css/main.8f72f9d0.chunk.css",
-    "static/js/main.c3865829.chunk.js"
+    "static/js/main.ef5a9b40.chunk.js"
   ]
 }
