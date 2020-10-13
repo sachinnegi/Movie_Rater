@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Movie_Rater/static/css/main.8f72f9d0.chunk.css",
-    "main.js": "/Movie_Rater/static/js/main.2c884a65.chunk.js",
-    "main.js.map": "/Movie_Rater/static/js/main.2c884a65.chunk.js.map",
+    "main.js": "/Movie_Rater/static/js/main.506df920.chunk.js",
+    "main.js.map": "/Movie_Rater/static/js/main.506df920.chunk.js.map",
     "runtime-main.js": "/Movie_Rater/static/js/runtime-main.f34c4656.js",
     "runtime-main.js.map": "/Movie_Rater/static/js/runtime-main.f34c4656.js.map",
     "static/css/2.220ccb42.chunk.css": "/Movie_Rater/static/css/2.220ccb42.chunk.css",
     "static/js/2.01fb00b3.chunk.js": "/Movie_Rater/static/js/2.01fb00b3.chunk.js",
     "static/js/2.01fb00b3.chunk.js.map": "/Movie_Rater/static/js/2.01fb00b3.chunk.js.map",
     "index.html": "/Movie_Rater/index.html",
-    "precache-manifest.983d9ccd62ce2b388aad5a4832e72fbc.js": "/Movie_Rater/precache-manifest.983d9ccd62ce2b388aad5a4832e72fbc.js",
+    "precache-manifest.0e1dbd95e90cf1c442a198a8d58f2933.js": "/Movie_Rater/precache-manifest.0e1dbd95e90cf1c442a198a8d58f2933.js",
     "service-worker.js": "/Movie_Rater/service-worker.js",
     "static/css/2.220ccb42.chunk.css.map": "/Movie_Rater/static/css/2.220ccb42.chunk.css.map",
     "static/css/main.8f72f9d0.chunk.css.map": "/Movie_Rater/static/css/main.8f72f9d0.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.220ccb42.chunk.css",
     "static/js/2.01fb00b3.chunk.js",
     "static/css/main.8f72f9d0.chunk.css",
-    "static/js/main.2c884a65.chunk.js"
+    "static/js/main.506df920.chunk.js"
   ]
 }
