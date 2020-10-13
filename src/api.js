@@ -18,6 +18,7 @@ const tvShowURL = {
 
 }
 
+
 const img_base_url = "http://image.tmdb.org/t/p/w342"
 export {movieURL, tvShowURL,img_base_url,key}
 

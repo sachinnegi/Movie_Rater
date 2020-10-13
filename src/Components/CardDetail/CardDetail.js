@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import Loader from '../Loader/Loader';
 import './CardDetail.css';
 
 
@@ -43,7 +44,7 @@ function CardDetail({movieDetail}) {
     }
     else{
         return (
-            <h1>Loading...</h1>
+            <Loader />
         )
     }
 }

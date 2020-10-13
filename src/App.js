@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
@@ -25,6 +25,8 @@ import {VerticalAlignTopOutlined} from '@ant-design/icons';
 function App() {
 
   const [movie,setMovie] = useState();
+
+
   const getMovie = (movieDetail)=>{
     setMovie(movieDetail);
   }  
