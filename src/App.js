@@ -7,8 +7,9 @@ import About from './Components/About/About';
 import Community from './Components/Community/Community';
 import Tvshows from './Components/TvShow/TvShow';
 import CardDetail from './Components/CardDetail/CardDetail';
-import { BackTop } from 'antd';
-import {VerticalAlignTopOutlined} from '@ant-design/icons';
+// import { BackTop } from 'antd';
+// import {VerticalAlignTopOutlined} from '@ant-design/icons';
+import SearchResult from './Components/SearchResult/SearchResult';
 
 /* 
   header
@@ -25,31 +26,39 @@ import {VerticalAlignTopOutlined} from '@ant-design/icons';
 function App() {
 
   const [movie,setMovie] = useState();
+  const [query, setQuery] = useState('')
 
 
   const getMovie = (movieDetail)=>{
     setMovie(movieDetail);
-  }  
-  const style = {
-    height: '40px',
-    width: '40px',
-    lineHeight: '40px',
-    borderRadius: '50%',
-    backgroundColor: '#6fb3b0',
-    color: '#fff',
-    textAlign: 'center',
-    fontSize: 20,
-  };
+  }
+  
+  const onSearchChange = (value)=>{
+    setQuery(value)
+    console.log(query)
+  }
+  
+//   const style = {
+//     height: '40px',
+//     width: '40px',
+//     lineHeight: '40px',
+//     borderRadius: '50%',
+//     backgroundColor: '#6fb3b0',
+//     color: '#fff',
+//     textAlign: 'center',
+//     fontSize: 20,
+//   };
+//   <BackTop>
+//   <div style={style}><VerticalAlignTopOutlined/></div>
+// </BackTop>
   
   return (
     <div className="App">
 
-    <BackTop>
-      <div style={style}><VerticalAlignTopOutlined/></div>
-    </BackTop>
+   
      
       <Router>
-        <NavBar/>
+        <NavBar onSearchChange = {onSearchChange} />
 
         <Switch>
           <Route exact path='/'>
@@ -60,6 +69,9 @@ function App() {
           </Route>
           <Route exact path="/carddetail" >
             <CardDetail movieDetail = {movie} />
+          </Route>
+          <Route exact path="/search" >
+            <SearchResult />
           </Route>
           <Route exact path='/community'> 
             <Community/>

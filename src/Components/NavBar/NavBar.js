@@ -5,7 +5,7 @@ import './NavBar.css'
 
 const { Search } = Input;
 
-function NavBar() {
+function NavBar({onSearchChange}) {
     return (
         <nav className = 'nav__bar'>
             <div style={{color:'white'}} className="logo">
@@ -13,7 +13,11 @@ function NavBar() {
             </div>
             <ul className='right__items'>
                 <li> 
-                <Search placeholder="input search text" onSearch={value => console.log(value)} enterButton/>
+                    <Search 
+                        placeholder="input search text" 
+                        onSearch={value => onSearchChange(value)} 
+                        enterButton
+                    />
                 </li>
                 <li><Link to="/" className = 'text__link'> Home </Link></li>
                 <li><Link to="/tvshows" className = 'text__link'> TV Shows </Link></li>
