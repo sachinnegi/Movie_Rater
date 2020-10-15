@@ -25,7 +25,9 @@ function SearchResult({searchInput}) {
     useEffect(() => {
         if (searchInput.length>0){
             getSearchResult(searchInput)
+            window.scrollTo(0,0)
         }
+        
     }, [searchInput])
 
     
