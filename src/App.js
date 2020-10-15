@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
@@ -34,8 +34,11 @@ function App() {
   }
   
   const onSearchChange = (value)=>{
+    console.log(value)
     setQuery(value)
     console.log(query)
+    setTimeout(()=>{setQuery('')}, 3000)
+    
   }
   
 //   const style = {
@@ -64,26 +67,36 @@ function App() {
           <Route exact path='/'>
             <Home getMovie = {getMovie}/>
           </Route>
+
           <Route exact path='/tvshows'>
             <Tvshows getMovie = {getMovie}/>
           </Route>
+
           <Route exact path="/carddetail" >
             <CardDetail movieDetail = {movie} />
           </Route>
+
           <Route exact path="/search" >
-            <SearchResult />
+            <SearchResult searchInput = {query} />
           </Route>
+
           <Route exact path='/community'> 
             <Community/>
           </Route>
+
           <Route exact path='/about'> 
             <About/>
           </Route>
+
         </Switch>
 
-      </Router>
-      
+        {query.length > 0 &&
+          <Redirect to={{
+            pathname: '/search'
+          }}/>
+        }
 
+      </Router>
       
     </div>
     
