@@ -9,7 +9,7 @@ function NavBar({onSearchChange}) {
     return (
         <nav className = 'nav__bar'>
             <div style={{color:'white'}} className="logo">
-                MOVIE RATER
+                <Link to="/"> MOVIE RATER </Link>
             </div>
             <ul className='right__items'>
                 <li> 

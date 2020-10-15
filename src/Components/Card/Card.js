@@ -9,8 +9,6 @@ function Card({title, id, poster_path,movieDetail,getMovie}) {
     return (
         <Link  to="/carddetail" 
             onClick = {()=>{
-                
-                console.log('hi there')
                 getMovie(movieDetail)
             }}>
             <div className='card'>

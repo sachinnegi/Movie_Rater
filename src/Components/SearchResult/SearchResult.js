@@ -3,8 +3,9 @@ import './SearchResult.css'
 import {key,img_base_url} from '../../api';
 import axios from 'axios';
 import Loader from '../Loader/Loader'
+import {Link} from 'react-router-dom';
 
-function SearchResult({searchInput}) {
+function SearchResult({searchInput, getMovie}) {
 
     const [movieArray, setMovieArray] = useState([])
 
@@ -36,16 +37,22 @@ function SearchResult({searchInput}) {
             <div className="search__card__container">
                 {
                     movieArray.map( (item,idx) => ((
-                        item.poster_path && <div key={item.id} className="search__image__detailContainer">
-                            <img 
-                                className = "search__image" 
-                                alt='poster' 
-                                src={img_base_url+item.poster_path} 
-                            />
-                            <div className="search__detail">
-                                {item.name || item.title}
+                        item.poster_path && 
+                        <Link to ="/carddetail"
+                            onClick = {()=>{
+                                getMovie(item)
+                            }}>
+                            <div key={item.id} className="search__image__detailContainer">
+                                <img 
+                                    className = "search__image" 
+                                    alt='poster' 
+                                    src={img_base_url+item.poster_path} 
+                                />
+                                <div className="search__detail">
+                                    {item.name || item.title}
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     )))
                 }
                 

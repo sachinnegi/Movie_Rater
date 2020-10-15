@@ -15,7 +15,7 @@ function CardArray({reqbgImg,getUrl,heading,url,getMovie}) {
                 const response  = await axios.get(url);
                 setMovies(response.data.results)
                 if (reqbgImg){
-                    getUrl(response.data.results[0])
+                    getUrl(response.data.results[Math.floor(Math.random()*(response.data.results.length-1))])
                 }
                 // console.log(response.data.results)
                 return response;

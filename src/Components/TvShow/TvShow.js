@@ -13,14 +13,14 @@ function TvShow({getMovie}) {
     }
     // console.log(imgurl)
     var container_style = {}
-    if (setImgurl){
+    if (imgurl){
         container_style = {
             backgroundImage: `linear-gradient(to right, rgba(0,0,0, 0.5) , rgba(0,0,0, 0.84)), url("${backdrop_base_url + imgurl.backdrop_path}")`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             bakcgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
-            height: "100vh",
+            height: "75vh",
             marginRight: '20px',    
         }
     }

@@ -34,9 +34,7 @@ function App() {
   }
   
   const onSearchChange = (value)=>{
-    console.log(value)
     setQuery(value)
-    console.log(query)
     setTimeout(()=>{setQuery('')}, 3000)
     
   }
@@ -77,7 +75,7 @@ function App() {
           </Route>
 
           <Route exact path="/search" >
-            <SearchResult searchInput = {query} />
+            <SearchResult searchInput = {query} getMovie = {getMovie} />
           </Route>
 
           <Route exact path='/community'> 
