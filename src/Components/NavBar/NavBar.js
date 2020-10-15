@@ -14,7 +14,7 @@ function NavBar({onSearchChange}) {
             <ul className='right__items'>
                 <li> 
                     <Search 
-                        placeholder="input search text" 
+                        placeholder="search movie, tv show" 
                         onSearch={value => onSearchChange(value)} 
                         enterButton
                     />
