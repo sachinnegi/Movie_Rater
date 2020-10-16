@@ -3,10 +3,11 @@
     flex-flow: row nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 15px 0;   
+    padding: 15px 0; ;  
 }
 .row{
     margin-top:50px;
+    margin-left: 20px
     /* margin-bottom:70px; */
 }
 
