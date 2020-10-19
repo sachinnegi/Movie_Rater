@@ -14,24 +14,21 @@ function SearchResult({searchInput, getMovie}) {
             const searchUrl = `https://api.themoviedb.org/3/search/multi?api_key=${key}&language=en-US&query=${query}&page=1&include_adult=false`;
             const response = await axios.get(searchUrl);
             setMovieArray(response.data.results)
-            console.log(response.data.results);
         }
         catch(error){
             console.log('Got error:-',error)
         }
     }
 
-    console.log('searchinputis:-', searchInput)
-    // console.log('query is',query)
     useEffect(() => {
         if (searchInput.length>0){
             getSearchResult(searchInput)
-            window.scrollTo(0,0)
+            // window.scrollTo(0,0)
         }
         
     }, [searchInput])
 
-    
+    console.log(searchInput)
     if (movieArray.length>0){
         return (
             <div className="search__card__container">

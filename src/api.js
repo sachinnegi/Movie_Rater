@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 const key = "c84671ee69c26dcf112bd21220af8a32";
 
@@ -22,11 +22,12 @@ const tvShowURL = {
 const img_base_url = "http://image.tmdb.org/t/p/w342"
 export {movieURL, tvShowURL,img_base_url,key}
 
-const url  = movieURL.latest;
-function check(){
-    axios.get(url)
-        .then((response) => console.log(response))
-}
+// const url  = movieURL.latest;
+// const url  = movieURL.latest;
+// function check(){
+//     axios.get(url)
+//         .then((response) => console.log(response))
+// }
 // check();
 
 

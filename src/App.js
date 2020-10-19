@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import NavBar from './Components/NavBar/NavBar';
@@ -28,7 +28,7 @@ function App() {
   const [movie,setMovie] = useState();
   const [query, setQuery] = useState('')
 
-  console.log('outer render')
+
   const getMovie = (movieDetail)=>{
     setMovie(movieDetail);
   }
@@ -56,13 +56,13 @@ function App() {
 //   <div style={style}><VerticalAlignTopOutlined/></div>
 // </BackTop>
   
-  console.log(query)
+
   return (
     
     
     <div className="App">
 
-      {console.log("render")}
+      
      
       <Router>
         <NavBar onSearchChange = {onSearchChange} />
@@ -98,10 +98,7 @@ function App() {
             <About/>
           </Route>
       
-  
-        </Switch>
-
-        
+        </Switch>  
       </Router>
       
     </div>
