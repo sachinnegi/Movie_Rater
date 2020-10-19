@@ -7,7 +7,7 @@ const img_base_url = "http://image.tmdb.org/t/p/w342";
 const backdrop_base_url = "http://image.tmdb.org/t/p/w1920_and_h800_multi_faces";
 
 function CardDetail({movieDetail}) {
-    console.log(movieDetail)
+    // console.log(movieDetail)
 
     useEffect(() => {
         window.scrollTo(0,0)

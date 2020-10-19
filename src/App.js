@@ -28,16 +28,19 @@ function App() {
   const [movie,setMovie] = useState();
   const [query, setQuery] = useState('')
 
-
+  console.log('outer render')
   const getMovie = (movieDetail)=>{
     setMovie(movieDetail);
   }
   
   const onSearchChange = (value)=>{
-    setQuery(value)
-    setTimeout(()=>{setQuery('')}, 3000)
+    setQuery("")
+    setTimeout(()=>{setQuery(value)},200) 
+    // console.log(query)
     
   }
+
+
   
 //   const style = {
 //     height: '40px',
@@ -53,13 +56,22 @@ function App() {
 //   <div style={style}><VerticalAlignTopOutlined/></div>
 // </BackTop>
   
+  console.log(query)
   return (
+    
+    
     <div className="App">
 
-   
+      {console.log("render")}
      
       <Router>
         <NavBar onSearchChange = {onSearchChange} />
+
+        {query.length &&
+          <Redirect push = {true} to={{
+            pathname: '/search'
+          }}/>
+        }
 
         <Switch>
           <Route exact path='/'>
@@ -85,15 +97,11 @@ function App() {
           <Route exact path='/about'> 
             <About/>
           </Route>
-
+      
+  
         </Switch>
 
-        {query.length > 0 &&
-          <Redirect to={{
-            pathname: '/search'
-          }}/>
-        }
-
+        
       </Router>
       
     </div>

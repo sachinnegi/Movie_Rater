@@ -21,8 +21,8 @@ function SearchResult({searchInput, getMovie}) {
         }
     }
 
-    
-    
+    console.log('searchinputis:-', searchInput)
+    // console.log('query is',query)
     useEffect(() => {
         if (searchInput.length>0){
             getSearchResult(searchInput)
