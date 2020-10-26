@@ -67,7 +67,7 @@ function App() {
       <Router>
         <NavBar onSearchChange = {onSearchChange} />
 
-        {query.length &&
+        {query.length>0 &&
           <Redirect push = {true} to={{
             pathname: '/search'
           }}/>
