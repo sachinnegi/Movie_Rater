@@ -44,18 +44,10 @@ function CardDetail({movieDetail}) {
         )
     }
     else{
-        // return (
-        //     <Loader />
-        // )
         return (
-            <HashRouter>
-            
-                <Redirect to={{
-                  pathname: '/about'
-                }}/>
-              
-            </HashRouter>
+            <Loader />
         )
+    
     }
 }
 
