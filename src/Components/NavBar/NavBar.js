@@ -12,7 +12,7 @@ function NavBar({onSearchChange}) {
                 <Link to="/"> MOVIE RATER </Link>
             </div>
             <ul className='right__items'>
-                <li> 
+                <li className = "search__bar"> 
                     <Search 
                         placeholder="search movie, tv show" 
                         onSearch={value => onSearchChange(value)} 

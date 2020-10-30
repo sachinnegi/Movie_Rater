@@ -8,20 +8,27 @@
     height: 55px;
     width: 100%;
     z-index: 1000;
-    /* opacity: 1; */
 
 }
 .right__items{
     display:flex;
+    align-items: center;
 }    
 .right__items li{
     list-style: none;
-    margin: 0 15px;
 }
 .text__link{
     color: white;
     transition: all 0.2s ;
     font-size: 16px;
+    text-align: center;
+    width: 100px;
+    display:inline-block;
+}
+.search__bar{
+    margin-right: 30px;
+    background-color: red;
+    display: inline-block;
 }
 .text__link:hover{
     background-color: whitesmoke;
