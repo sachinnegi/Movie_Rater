@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c4bc0d1581710c0c0b0a3e070294a5d",
+    "revision": "7c8de16b55ab1a9f8ff5bec9c178a1e7",
     "url": "/Movie_Rater/index.html"
   },
   {
-    "revision": "dcd7f68a000fea2965de",
+    "revision": "dad82fa13f0575f0aa00",
     "url": "/Movie_Rater/static/css/2.220ccb42.chunk.css"
   },
   {
-    "revision": "654c95112aaeb5957b08",
+    "revision": "e333428f03f0a6b1b92b",
     "url": "/Movie_Rater/static/css/main.5eba9d21.chunk.css"
   },
   {
-    "revision": "dcd7f68a000fea2965de",
-    "url": "/Movie_Rater/static/js/2.5537dc64.chunk.js"
+    "revision": "dad82fa13f0575f0aa00",
+    "url": "/Movie_Rater/static/js/2.6e37263b.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Movie_Rater/static/js/2.5537dc64.chunk.js.LICENSE.txt"
+    "url": "/Movie_Rater/static/js/2.6e37263b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "654c95112aaeb5957b08",
-    "url": "/Movie_Rater/static/js/main.688928a4.chunk.js"
+    "revision": "e333428f03f0a6b1b92b",
+    "url": "/Movie_Rater/static/js/main.953db155.chunk.js"
   },
   {
     "revision": "58e884db3b504e24173f",
