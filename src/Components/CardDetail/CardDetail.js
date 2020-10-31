@@ -4,8 +4,8 @@ import './CardDetail.css';
 import {BrowserRouter as HashRouter, Router, Switch, Route, Redirect} from 'react-router-dom';
 
 
-const img_base_url = "http://image.tmdb.org/t/p/w342";
-const backdrop_base_url = "http://image.tmdb.org/t/p/w1920_and_h800_multi_faces";
+const img_base_url = "https://image.tmdb.org/t/p/w342";
+const backdrop_base_url = "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces";
 
 function CardDetail({movieDetail}) {
     // console.log(movieDetail)

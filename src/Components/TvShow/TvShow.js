@@ -3,7 +3,7 @@ import {tvShowURL} from '../../api';
 import CardArray from '../CardArray/CardArray';
 import './TvShow.css';
 
-const backdrop_base_url = "http://image.tmdb.org/t/p/w1920_and_h800_multi_faces";
+const backdrop_base_url = "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces";
 // const backdrop_base_url = "http://image.tmdb.org/t/p/w780/";
 
 function TvShow({getMovie}) {
