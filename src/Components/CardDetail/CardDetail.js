@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import Loader from '../Loader/Loader';
 import './CardDetail.css';
-import {BrowserRouter as HashRouter, Router, Switch, Route, Redirect} from 'react-router-dom';
 
 
 const img_base_url = "https://image.tmdb.org/t/p/w342";

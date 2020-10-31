@@ -38,5 +38,12 @@
 }
 .logo{
     flex: 1;
+    font-family: 'Faster One', cursive;
+    font-size: 30px;
+    color: white;
+}
+.logo__link{
+    color:rgb(68, 70, 211);
+    letter-spacing: 7px;
 }
 
