@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Movie_Rater/static/css/main.01d37016.chunk.css",
-    "main.js": "/Movie_Rater/static/js/main.70150a73.chunk.js",
-    "main.js.map": "/Movie_Rater/static/js/main.70150a73.chunk.js.map",
+    "main.js": "/Movie_Rater/static/js/main.678fc033.chunk.js",
+    "main.js.map": "/Movie_Rater/static/js/main.678fc033.chunk.js.map",
     "runtime-main.js": "/Movie_Rater/static/js/runtime-main.f34c4656.js",
     "runtime-main.js.map": "/Movie_Rater/static/js/runtime-main.f34c4656.js.map",
     "static/css/2.220ccb42.chunk.css": "/Movie_Rater/static/css/2.220ccb42.chunk.css",
-    "static/js/2.6e37263b.chunk.js": "/Movie_Rater/static/js/2.6e37263b.chunk.js",
-    "static/js/2.6e37263b.chunk.js.map": "/Movie_Rater/static/js/2.6e37263b.chunk.js.map",
+    "static/js/2.3b7b41dc.chunk.js": "/Movie_Rater/static/js/2.3b7b41dc.chunk.js",
+    "static/js/2.3b7b41dc.chunk.js.map": "/Movie_Rater/static/js/2.3b7b41dc.chunk.js.map",
     "index.html": "/Movie_Rater/index.html",
-    "precache-manifest.12b0f9ae6aafb0175b7fcd44dcd0e74b.js": "/Movie_Rater/precache-manifest.12b0f9ae6aafb0175b7fcd44dcd0e74b.js",
+    "precache-manifest.c1cb8ae8c4ff3adbba7ebc4460ed3412.js": "/Movie_Rater/precache-manifest.c1cb8ae8c4ff3adbba7ebc4460ed3412.js",
     "service-worker.js": "/Movie_Rater/service-worker.js",
     "static/css/2.220ccb42.chunk.css.map": "/Movie_Rater/static/css/2.220ccb42.chunk.css.map",
     "static/css/main.01d37016.chunk.css.map": "/Movie_Rater/static/css/main.01d37016.chunk.css.map",
-    "static/js/2.6e37263b.chunk.js.LICENSE.txt": "/Movie_Rater/static/js/2.6e37263b.chunk.js.LICENSE.txt"
+    "static/js/2.3b7b41dc.chunk.js.LICENSE.txt": "/Movie_Rater/static/js/2.3b7b41dc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f34c4656.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.6e37263b.chunk.js",
+    "static/js/2.3b7b41dc.chunk.js",
     "static/css/main.01d37016.chunk.css",
-    "static/js/main.70150a73.chunk.js"
+    "static/js/main.678fc033.chunk.js"
   ]
 }
