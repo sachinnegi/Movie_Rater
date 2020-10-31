@@ -20,6 +20,7 @@
     margin-top: 10px;
     font-family: 'Bungee Inline', cursive;
     color: wheat;
+    font-size: 18px;
 }
 .poster:hover{
     transform : scale(1.08);

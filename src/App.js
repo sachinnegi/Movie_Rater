@@ -64,7 +64,7 @@ function App() {
 
       
      
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <NavBar onSearchChange = {onSearchChange} />
 
         {query.length>0 &&
