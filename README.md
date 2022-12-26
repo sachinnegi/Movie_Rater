@@ -29,4 +29,8 @@ https://www.section.io/engineering-education/user-groups-and-permissions-linux/
     $ cat /etc/group | grep -i docker
     docker:x:998:sachin
 
- 
+- Which process is listening on a port
+    $ netstat -nlp | grep 3005
+	n = numeric
+	l = only listening process
+	p = process id

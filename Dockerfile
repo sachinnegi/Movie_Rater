@@ -5,5 +5,7 @@ FROM node:${NODE_VERSION}
 WORKDIR /app
 COPY . .
 RUN npm install
-CMD ["node", "--version"]
+ENV CI=true
+ENTRYPOINT ["npm","start"]
+#CMD ["node", "--version"]
 
